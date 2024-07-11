@@ -1,7 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { formatDate } from '../../utils/formatDate';
+import { formatDate } from '../../../../utils/formatDate';
 
 const CheckinCheckoutInfo = ({ orcamento }) => {
   console.log("Orçamento recebido:", orcamento);

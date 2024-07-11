@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Main from '../components/Main';
-import CadastroAltaTemporadaForm from './forms/CadastroAltaTemporadaForm';
-import CadastrarAltaTemporadaRequest from '../services/CadastrarAltaTemporadaRequest';
-import { ObterDatasAltaTemporadaRequest } from '../services/ConsultarAltaTemporadaRequest';
-import { ExcluirDataAltaTemporadaRequest } from '../services/ExcluirDataAltaTemporadaRequest';
-import TabelaAltaTemporada from './retornoOrcamento/TabelaAltaTemporada';
+import Main from '../../../components/Main';
+import CadastroAltaTemporadaForm from '../components/forms/CadastroAltaTemporadaForm';
+import CadastrarAltaTemporadaRequest from '../../../services/CadastrarAltaTemporadaRequest';
+import { ObterDatasAltaTemporadaRequest } from '../../../services/ConsultarAltaTemporadaRequest';
+import { ExcluirDataAltaTemporadaRequest } from '../../../services/ExcluirDataAltaTemporadaRequest';
+import TabelaAltaTemporada from '../components/results/TabelaAltaTemporada';
 
 const headerProps = {
     icon: 'calendar',

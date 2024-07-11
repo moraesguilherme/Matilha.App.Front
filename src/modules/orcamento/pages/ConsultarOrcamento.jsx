@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Main from '../components/Main';
-import ConsultarOrcamentoForm from './forms/ConsultarOrcamentoForm';
-import EditarOrcamento from './updateOrcamento/EditarOrcamento';
-import ConsultarOrcamentoPorNumeroProposta from '../services/ConsultarOrcamentoRequest';
+import Main from '../../../components/Main';
+import ConsultarOrcamentoForm from '../components/forms/ConsultarOrcamentoForm';
+import EditarOrcamento from '../components/update/EditarOrcamento';
+import ConsultarOrcamentoPorNumeroProposta from '../../../services/ConsultarOrcamentoRequest';
 
 const headerProps = {
     icon: 'search',

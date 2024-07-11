@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
-import ConsultarClientePorTelefoneRequest from '../../services/ConsultarClientePorTelefoneRequest';
+import ConsultarClientePorTelefoneRequest from '../../../../services/ConsultarClientePorTelefoneRequest';
 import '../../styles/BuscarClientePorTelefone.css';
 
 const BuscarClientePorTelefone = ({ updateFieldCliente, updateFieldCao }) => {

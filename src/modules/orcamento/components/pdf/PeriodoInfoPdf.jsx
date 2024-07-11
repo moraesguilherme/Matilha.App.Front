@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { formatDate } from '../../utils/formatDate';
-import getTemporadaNome from '../../utils/Temporada';
+import { formatDate } from '../../../../utils/formatDate';
+import getTemporadaNome from '../../../../utils/Temporada';
 
 const styles = StyleSheet.create({
   container: {

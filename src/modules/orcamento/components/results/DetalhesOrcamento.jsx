@@ -1,6 +1,6 @@
 import React from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import PDFDetalhesOrcamento from '../pdfOrcamento/PDFDetalhesOrcamento';
+import PDFDetalhesOrcamento from '../pdf/PDFDetalhesOrcamento';
 import PropostaInfo from './PropostaInfo';
 import ClienteInfo from './ClienteInfo';
 import CaesInfo from './CaesInfo';

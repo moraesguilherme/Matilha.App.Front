@@ -1,14 +1,14 @@
 import React, {Component} from "react"
-import Main from '../components/Main'
-import CaoOrcamento from "./forms/CaoOrcamento"
-import ClienteOrcamento from "./forms/ClienteOrcamento"
-import CheckinCheckout from './forms/CheckinCheckout'
-import Servicos from "./forms/Servicos"
-import Observacoes from "./forms/Obeservacoes"
-import Desconto from "./forms/Desconto"
-import ExpiraProposta from "./forms/ExpiraProposta"
-import MontaOrcamentoRequest from "../services/MontaOrcamentoRequest"
-import DetalhesOrcamento from "./retornoOrcamento/DetalhesOrcamento"
+import Main from '../../../components/Main'
+import CaoOrcamento from "../components/forms/CaoOrcamento"
+import ClienteOrcamento from "../components/forms/ClienteOrcamento"
+import CheckinCheckout from '../components/forms/CheckinCheckout'
+import Servicos from "../components/forms/Servicos"
+import Observacoes from "../components/forms/Obeservacoes"
+import Desconto from "../components/forms/Desconto"
+import ExpiraProposta from "../components/forms/ExpiraProposta"
+import MontaOrcamentoRequest from "../../../services/MontaOrcamentoRequest"
+import DetalhesOrcamento from "../components/results/DetalhesOrcamento"
 
 const headerProps = {
     icon: 'users',

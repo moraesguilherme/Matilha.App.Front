@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { formatDate } from '../../utils/formatDate';
+import { formatDate } from '../../../../utils/formatDate';
 
 const styles = StyleSheet.create({
   container: {

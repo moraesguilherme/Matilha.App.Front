@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Main from '../components/Main';
-import CadastroPrecoForm from './forms/CadastroPrecoForm';
-import CadastrarPrecoRequest from '../services/CadastrarPrecoRequest';
-import ConsultarPrecosRequest from '../services/ConsultarPrecosRequest';
-import AtualizarPrecoRequest from '../services/AtualizarPrecoRequest';
-import ExcluirPrecoRequest from '../services/ExcluirPrecoRequest';
-import TabelaPrecos from './retornoOrcamento/TabelaPrecos';
+import Main from '../../../components/Main';
+import CadastroPrecoForm from '../components/forms/CadastroPrecoForm';
+import CadastrarPrecoRequest from '../../../services/CadastrarPrecoRequest';
+import ConsultarPrecosRequest from '../../../services/ConsultarPrecosRequest';
+import AtualizarPrecoRequest from '../../../services/AtualizarPrecoRequest';
+import ExcluirPrecoRequest from '../../../services/ExcluirPrecoRequest';
+import TabelaPrecos from '../components/results/TabelaPrecos';
 
 const headerProps = {
     icon: 'dollar-sign',

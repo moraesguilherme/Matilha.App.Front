@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import PDFDetalhesOrcamento from '../pdfOrcamento/PDFDetalhesOrcamento';
-import PropostaInfo from '../retornoOrcamento/PropostaInfo';
-import ClienteInfo from '../retornoOrcamento/ClienteInfo';
+import PDFDetalhesOrcamento from '../pdf/PDFDetalhesOrcamento';
+import PropostaInfo from '../results/PropostaInfo';
+import ClienteInfo from '../results/ClienteInfo';
 import CaoOrcamento from '../forms/CaoOrcamento';
-import CaesInfo from '../retornoOrcamento/CaesInfo';
-import CheckinCheckoutInfo from '../retornoOrcamento/CheckinCheckoutInfo';
+import CaesInfo from '../results/CaesInfo';
+import CheckinCheckoutInfo from '../results/CheckinCheckoutInfo';
 import EditarCheckinCheckout from './EditarCheckinCheckout';
-import PeriodoInfo from '../retornoOrcamento/PeriodoInfo';
-import ServicosInfo from '../retornoOrcamento/ServicosInfo';
+import PeriodoInfo from '../results/PeriodoInfo';
+import ServicosInfo from '../results/ServicosInfo';
 import EditarServicos from './EditarServicos';
-import ObservacoesInfo from '../retornoOrcamento/ObservacoesInfo';
-import ValoresInfo from '../retornoOrcamento/ValoresInfo';
+import ObservacoesInfo from '../results/ObservacoesInfo';
+import ValoresInfo from '../results/ValoresInfo';
 import Observacoes from '../forms/Obeservacoes';
 import EditarDesconto from './EditarDesconto';
-import MontaAtualizacaoOrcamentoRequest from '../../services/MontaAtualizacaoOrcamentoRequest';
+import MontaAtualizacaoOrcamentoRequest from '../../../../services/MontaAtualizacaoOrcamentoRequest';
 
 const EditarOrcamento = ({ orcamento, atualizarOrcamento }) => {
     const [editedOrcamento, setEditedOrcamento] = useState(orcamento);
