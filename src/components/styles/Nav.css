@@ -1,0 +1,48 @@
+aside.menu-area {
+    background-color: var(--bg-clean);
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #8f9899;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.menu a:hover{
+    color: #12524b;
+}
+
+.menu-orcamento {
+    padding: 15px;
+    text-decoration: none;
+}
+
+.submenu {
+    display: none;
+  }
+  
+.submenu.show {
+    display: block;
+}
+  
+
+@media(max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu a {
+        display: inline;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .menu {
+        height: 100%;
+        justify-content: space-around;
+    }
+}
