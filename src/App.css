@@ -1,8 +1,8 @@
 :root {
     --bg-clean: #c2e1d8;
 
-    --logo-height: 100px; /*define a autura do logo*/
-    --header-height: 150px; /*define a autura do header*/
+    --logo-height: 100px;
+    --header-height: 150px;
     --menu-top-height: 70px;
     --aside-width: 255px;
     --footer-height: 50px;
