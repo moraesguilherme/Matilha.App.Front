@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Main from '../templates/Main';
+import Main from '../components/Main';
 import ConsultarOrcamentoForm from './forms/ConsultarOrcamentoForm';
 import EditarOrcamento from './updateOrcamento/EditarOrcamento';
 import ConsultarOrcamentoPorNumeroProposta from '../services/ConsultarOrcamentoRequest';

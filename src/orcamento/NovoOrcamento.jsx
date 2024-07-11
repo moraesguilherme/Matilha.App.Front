@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import Main from '../templates/Main'
+import Main from '../components/Main'
 import CaoOrcamento from "./forms/CaoOrcamento"
 import ClienteOrcamento from "./forms/ClienteOrcamento"
 import CheckinCheckout from './forms/CheckinCheckout'

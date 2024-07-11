@@ -1,18 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import '../components/styles/App.css';
+import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from '../context/AuthContext';
-import Home from '../components/home/Home';
-import NovoOrcamento from '../components/orcamento/NovoOrcamento';
-import ConsultarOrcamento from '../components/orcamento/ConsultarOrcamento';
-import CadastroAltaTemporada from '../components/orcamento/CadastroAltaTemporada';
-import CadastroPreco from '../components/orcamento/CadastroPreco';
-import Login from '../components/auth/Login';
-import PrivateRoute from '../context/PrivateRoute';
-import Layout from '../components/templates/Layout';
-import { AxiosConfig } from '../components/services/AxiosConfig'
+import { AuthProvider } from './context/AuthContext';
+import Home from '../src/pages/Home';
+import NovoOrcamento from '../src/orcamento/NovoOrcamento';
+import ConsultarOrcamento from '../src/orcamento/ConsultarOrcamento';
+import CadastroAltaTemporada from '../src/orcamento/CadastroAltaTemporada';
+import CadastroPreco from '../src/orcamento/CadastroPreco';
+import Login from '../src/pages/Login';
+import PrivateRoute from './context/PrivateRoute';
+import Layout from '../src/components/Layout';
+import { AxiosConfig } from './services/AxiosConfig'
 
 const App = () => (
     <AuthProvider>

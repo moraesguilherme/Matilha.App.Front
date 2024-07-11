@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Main from '../templates/Main';
+import Main from '../components/Main';
 import CadastroAltaTemporadaForm from './forms/CadastroAltaTemporadaForm';
 import CadastrarAltaTemporadaRequest from '../services/CadastrarAltaTemporadaRequest';
 import { ObterDatasAltaTemporadaRequest } from '../services/ConsultarAltaTemporadaRequest';

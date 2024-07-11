@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { AuthContext } from '../../context/AuthContext';
+import { AuthContext } from '../context/AuthContext';
 import { useContext, useEffect } from 'react';
 
 const setupAxiosInterceptors = (token) => {

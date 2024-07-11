@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Main from '../templates/Main';
+import Main from '../components/Main';
 import CadastroPrecoForm from './forms/CadastroPrecoForm';
 import CadastrarPrecoRequest from '../services/CadastrarPrecoRequest';
 import ConsultarPrecosRequest from '../services/ConsultarPrecosRequest';
