@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -11,7 +10,6 @@ import CadastroAltaTemporada from './modules/orcamento/pages/CadastroAltaTempora
 import CadastroPreco from './modules/orcamento/pages/CadastroPreco';
 import Login from '../src/pages/Login';
 import PrivateRoute from './context/PrivateRoute';
-import Layout from '../src/components/Layout';
 import { AxiosConfig } from './services/AxiosConfig'
 
 const App = () => (
@@ -20,7 +18,7 @@ const App = () => (
         <BrowserRouter>
             <Routes>
                 <Route path="/login" element={<Login />} />
-                <Route path="/" element={<PrivateRoute element={<Layout />} />}>
+                <Route path="/" element={<PrivateRoute element={<Home />} />}>
                     <Route index element={<Home />} />
                     <Route path="novoOrcamento" element={<NovoOrcamento />} />
                     <Route path="consultarOrcamento" element={<ConsultarOrcamento />} />

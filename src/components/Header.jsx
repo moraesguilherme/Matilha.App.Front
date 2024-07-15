@@ -1,10 +1,13 @@
-import '../styles/Header.css'
-import React from 'react'
+import './Header.css';
+import React from 'react';
 
-export default props =>
-    <header className="header d-none d-sm-flex flex-column">
+const Header = ({ icon, title, subtitle }) => (
+    <header className="header">
         <h1 className='mt-3'>
-            <i className={`fa fa-${props.icon}`}></i> {props.title}
+            <i className={`fa fa-${icon}`}></i> {title}
         </h1>
-        <p className="lead text-muted">{props.subtitle}</p>
+        <p className="lead text-muted">{subtitle}</p>
     </header>
+);
+
+export default Header;

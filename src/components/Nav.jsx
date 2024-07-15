@@ -1,4 +1,4 @@
-import '../styles/Nav.css';
+import './Nav.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const Nav = () => {
           <i className="fa fa-home"> Início</i>
         </Link>
         <div className="menu-orcamento" onClick={toggleSubMenu}>
-          <i className="fa fa-home"> Orçamento</i>
+          <i className="fa fa-folder"> Orçamento</i>
           <div className={`submenu ${showSubMenu ? 'show' : ''}`}>
             <Link to="/novoOrcamento">Novo Orçamento</Link>
             <Link to="/consultarOrcamento">Consultar Orçamento</Link>
@@ -24,9 +24,6 @@ const Nav = () => {
             <Link to="/cadastroPreco">Cadastrar Preço Hospedagem</Link>
           </div>
         </div>
-        {/* <Link to="/ConsultaOrcamento">
-          <i className="fa fa-home"> Consultar Orçamento</i>
-        </Link> */}
       </nav>
     </aside>
   );
