@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { LoginRequest } from '../services/LoginRequest';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import Logo from '../components/Logo';
+import logo from '../assets/imgs/logo.png';
 import './Login.css';
 
 const Login = () => {
@@ -34,9 +34,8 @@ const Login = () => {
         <div className="login-background">
             <div className="login-container">
                 <div className="login-logo">
-                    <Logo />
+                    <img src={logo} alt="logo" className="logo-image" />
                 </div>
-                <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="input-group">
                         <label>Usuário</label>
