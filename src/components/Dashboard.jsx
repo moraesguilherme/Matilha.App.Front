@@ -42,7 +42,7 @@ const Dashboard = () => {
             </header>
             <main className="dashboard-main">
                 <DragDropContext onDragEnd={onDragEnd}>
-                    <Droppable droppableId="droppable">
+                    <Droppable droppableId="droppable" direction="horizontal">
                         {(provided) => (
                             <div className="card-container" ref={provided.innerRef} {...provided.droppableProps}>
                                 {cards.map((card, index) => (
