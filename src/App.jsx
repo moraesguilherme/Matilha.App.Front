@@ -10,12 +10,14 @@ import CadastroAltaTemporada from './modules/orcamento/pages/CadastroAltaTempora
 import CadastroPreco from './modules/orcamento/pages/CadastroPreco';
 import Login from '../src/pages/Login';
 import PrivateRoute from './context/PrivateRoute';
-import { AxiosConfig } from './services/AxiosConfig'
+import { AxiosConfig } from './services/AxiosConfig';
+import GlobalStyle from './GlobalStyles';
 
 const App = () => (
     <AuthProvider>
         <AxiosConfig />
         <BrowserRouter>
+            <GlobalStyle />
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/" element={<PrivateRoute element={<Home />} />}>

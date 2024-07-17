@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaFolder, FaCog, FaBars, FaChevronLeft, FaSignOutAlt, FaUserCircle, FaChevronRight } from 'react-icons/fa';
+import { FaHome, FaFileInvoiceDollar, FaCog, FaBars, FaChevronLeft, FaSignOutAlt, FaUserCircle, FaChevronRight } from 'react-icons/fa';
 import './CustomSidebar.css';
 import logo from '../assets/imgs/logo.png';
 
@@ -38,7 +38,7 @@ const CustomSidebar = () => {
           {!isCollapsed && <Link to="/" className="menu-link">Dashboard</Link>}
         </div>
         <div className={`menu-item ${isSubMenuOpen ? 'open' : ''}`} onClick={handleToggleSubMenu}>
-          <FaFolder />
+          <FaFileInvoiceDollar />
           {!isCollapsed && <div className="menu-link">Orçamentos</div>}
         </div>
         {isSubMenuOpen && !isCollapsed && (

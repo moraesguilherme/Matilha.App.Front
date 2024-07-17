@@ -38,7 +38,6 @@ body {
     height: auto;
 }
 
-
 h2 {
     color: #333333;
     margin-bottom: 20px;
@@ -61,7 +60,7 @@ h2 {
     border: 1px solid #dddddd;
     border-radius: 25px !important;
     font-size: 16px;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
 .password-input-container {
@@ -88,12 +87,19 @@ h2 {
     height: 100%;
     display: flex;
     align-items: center;
+    color: #333333;
+}
+
+.password-input-container button:hover,
+.password-input-container button:focus {
+    background: none;
+    color: #333333;
 }
 
 .caps-lock-container {
     height: 20px;
-    margin-top: 5px; 
-    line-height: 20px; 
+    margin-top: 5px;
+    line-height: 20px;
 }
 
 .caps-lock-warning {
@@ -101,13 +107,13 @@ h2 {
     font-size: 12px;
     margin: 0;
     visibility: hidden;
-    opacity: 0; 
-    transition: visibility 0s, opacity 0.5s linear; 
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .caps-lock-warning.visible {
-    visibility: visible; 
-    opacity: 1; 
+    visibility: visible;
+    opacity: 1;
 }
 
 .login-button {
@@ -120,10 +126,6 @@ h2 {
     width: 100%;
     font-size: 16px;
     margin-top: 10px;
-}
-
-.login-button:hover {
-    background-color: #00796b;
 }
 
 .login-options {
