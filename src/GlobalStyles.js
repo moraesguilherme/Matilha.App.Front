@@ -40,6 +40,16 @@ const GlobalStyle = createGlobalStyle`
   button:hover {
     background-color: #00796b;
   }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 export default GlobalStyle;

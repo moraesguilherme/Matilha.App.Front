@@ -40,7 +40,8 @@
 }
 
 .card-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -50,10 +51,21 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    flex-grow: 1;
     text-align: center;
-    min-width: 200px;
     border: 1px solid #E0E0E0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card {
+    grid-column: span 1;
+}
+
+.chart-card, .pie-card {
+    grid-column: span 2;
+}
+
+.table-card {
+    grid-column: span 3;
 }
 
 .card-header {
@@ -81,4 +93,8 @@
 .card.is-dragging {
     background-color: #e0e0e0;
     border: 1px dashed #ccc;
+    transition: 400ms;
+    cursor: move;
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }

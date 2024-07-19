@@ -1,0 +1,24 @@
+.table-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    overflow-x: auto;
+  }
+  
+  .table-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-card th, .table-card td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table-card th {
+    background-color: #f4f4f4;
+  }
+  
