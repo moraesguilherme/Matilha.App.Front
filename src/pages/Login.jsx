@@ -20,7 +20,7 @@ const Login = () => {
         try {
             const credentials = { username, passwordHash: password };
             const data = await LoginRequest(credentials);
-            login(data.token);
+            login(data.token, data.refreshToken, data.userId, data.sessionId);
             navigate('/');
         } catch (error) {
             alert('Login failed: ' + error.message);

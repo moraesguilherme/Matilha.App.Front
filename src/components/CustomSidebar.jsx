@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaHome, FaFileInvoiceDollar, FaCog, FaBars, FaChevronLeft, FaSignOutAlt, FaUserCircle, FaChevronRight } from 'react-icons/fa';
 import './CustomSidebar.css';
 import logo from '../assets/imgs/logo.png';
+import { useAuth } from '../context/AuthContext';
 
 const CustomSidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  const { logout } = useAuth();
+  const navigate = useNavigate();
 
   const handleToggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
@@ -20,6 +23,11 @@ const CustomSidebar = () => {
 
   const handleToggleSubMenu = () => {
     setIsSubMenuOpen(!isSubMenuOpen);
+  };
+
+  const handleLogout = async () => {
+    await logout();
+    navigate('/login');
   };
 
   return (
@@ -55,9 +63,9 @@ const CustomSidebar = () => {
           <FaCog />
           {!isCollapsed && <Link to="/settings" className="menu-link">Settings</Link>}
         </div>
-        <div className="menu-item">
+        <div className="menu-item" onClick={handleLogout}>
           <FaSignOutAlt />
-          {!isCollapsed && <Link to="/logout" className="menu-link">Logout</Link>}
+          {!isCollapsed && <div className="menu-link">Logout</div>}
         </div>
         <div className="user-info">
           <FaUserCircle size={40} style={{ color: '#6c757d' }} />
